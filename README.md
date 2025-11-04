@@ -69,10 +69,15 @@ git clone https://github.com/diyaaghosh/diabetes-predictor.git
 ```
 
 ### **Install Dependencies**
+```
 pip install -r requirements.txt
+```
 ### **Run the Streamlit App**
+```
 streamlit run app.py
+```
 ### **File Structure**
+```
  diabetes-prediction-app
 │
 ├── app.py                      # Streamlit app main file
@@ -82,7 +87,7 @@ streamlit run app.py
 ├── dataset.csv                 # (optional) Training dataset
 └── assets/
     └── app_preview.png         # Screenshot of the app
-
+```
 
 
 git clone https://github.com/<your-username>/diabetes-prediction-app.git
