@@ -1,11 +1,8 @@
 # Core Libraries
 numpy
 pandas
-scikit-learnstreamlit
-
-joblib
 scikit-learn
-
+joblib
 
 # ML Models
 xgboost
