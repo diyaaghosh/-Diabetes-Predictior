@@ -1,5 +1,6 @@
 #  Diabetes Prediction App
-![Uploading image.png…]()
+
+<img width="828" height="760" alt="image" src="https://github.com/user-attachments/assets/58de7607-c8d4-40ef-aeba-18a03d33c1e8" />
 
 **AI-powered early health risk detection system** built using **Streamlit**, **Python**, and **Machine Learning**.  
 This app predicts the likelihood of diabetes based on user health inputs such as glucose level, insulin, BMI, and age.
