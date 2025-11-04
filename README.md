@@ -7,14 +7,14 @@ This app predicts the likelihood of diabetes based on user health inputs such as
 
 ##  Features
 
-- 🔹 Clean and interactive **Streamlit UI**
-- 🔹 Accepts multiple health parameters
-- 🔹 Uses the **best-trained ML model** (Logistic Regression, Random Forest, CatBoost, etc.)
-- 🔹 Displays confidence score and prediction message
-- 🔹 Shows processed input data for transparency
-- 🔹 Beautiful color-coded output messages
-  -  *Non-Diabetic*: “You are likely not diabetic.”
-  -  *Diabetic*: “You are likely diabetic. Please consult a doctor.”
+-  Clean and interactive **Streamlit UI**
+-  Accepts multiple health parameters
+-  Uses the **best-trained ML model** (Logistic Regression, Random Forest, CatBoost, etc.)
+-  Displays confidence score and prediction message
+-  Shows processed input data for transparency
+-  Beautiful color-coded output messages
+-   *Non-Diabetic*: “You are likely not diabetic.”
+-  *Diabetic*: “You are likely diabetic. Please consult a doctor.”
 
 ---
 
