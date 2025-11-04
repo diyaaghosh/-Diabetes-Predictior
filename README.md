@@ -66,7 +66,7 @@ After evaluation, the model with **highest AUC and F1-score** was chosen as the 
 ### 1️ Clone the Repository
 ```bash
 git clone https://github.com/diyaaghosh/diabetes-predictor.git
-
+```
 
 ### **Install Dependencies**
 pip install -r requirements.txt
