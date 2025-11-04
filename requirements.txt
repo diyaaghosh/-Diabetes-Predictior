@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+joblib
+xgboost
+lightgbm
+catboost
+tensorflow
+keras
+matplotlib
+seaborn
+streamlit
+protobuf==3.20.3
