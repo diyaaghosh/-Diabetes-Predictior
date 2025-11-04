@@ -1,10 +1,17 @@
+import subprocess
+import sys
+
+
+try:
+    import joblib
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "joblib"])
+    import joblib
+
 import streamlit as st
 import pandas as pd
-import joblib
 
-# ------------------------------
-# Load Model and Columns
-# ------------------------------
+
 @st.cache_resource
 def load_model():
     model = joblib.load("diabetes_model.pkl")
@@ -13,9 +20,7 @@ def load_model():
 
 model, model_columns = load_model()
 
-# ------------------------------
-# Custom Styling
-# ------------------------------
+
 st.markdown("""
     <style>
     .stApp {
@@ -66,9 +71,7 @@ st.markdown("""
 st.markdown("<h1>🩺 Diabetes Prediction App</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align:center;font-size:18px;'>AI-powered early health risk detection 🌿</p>", unsafe_allow_html=True)
 
-# ------------------------------
-# Input Form
-# ------------------------------
+
 st.markdown('<div class="main-card">', unsafe_allow_html=True)
 st.subheader("📋 Enter Your Health Details")
 
@@ -91,9 +94,7 @@ with st.form("diabetes_form"):
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ------------------------------
-# Preprocessing Function
-# ------------------------------
+
 def preprocess_input(glucose, blood_pressure, skin_thickness, insulin, bmi, pregnancies, age, dpf):
     data = {}
 
@@ -160,9 +161,7 @@ def preprocess_input(glucose, blood_pressure, skin_thickness, insulin, bmi, preg
 
     return pd.DataFrame([data])
 
-# ------------------------------
-# Prediction
-# ------------------------------
+
 if submitted:
     input_df = preprocess_input(glucose, blood_pressure, skin_thickness, insulin, bmi, pregnancies, age, dpf)
 
@@ -183,3 +182,4 @@ if submitted:
     if prob is not None:
         st.progress(int(prob * 100))
         st.write(f"**Confidence:** {prob*100:.2f}%")
+
