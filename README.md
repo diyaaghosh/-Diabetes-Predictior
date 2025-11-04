@@ -78,10 +78,10 @@ streamlit run app.py
 ```
 ### **File Structure**
 ```
- diabetes-prediction-app
-│
-├── app.py                      # Streamlit app main file
-├── best_diabetes_model.pkl     # Saved ML model
+
+├── chat.py                      # Streamlit app main file
+├── model_columns.pkl
+├── best_diabetes_model.pkl   # Saved ML model
 ├── requirements.txt            # Dependencies
 ├── README.md                   # Project documentation
 ├── dataset.csv                 # (optional) Training dataset
@@ -90,5 +90,3 @@ streamlit run app.py
 ```
 
 
-git clone https://github.com/<your-username>/diabetes-prediction-app.git
-cd diabetes-prediction-app
